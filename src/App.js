@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-route
 import AuthForm from './authform'; // Ensure correct component import
 import NotFound from './NotFound';
 import Spinner from './Spinner';
-import bgImage from './assets/images/bgImage.png';
+import bgImage from './assets/images/bb.png';
 
 function MainApp() {
   const [loading, setLoading] = useState(true);
