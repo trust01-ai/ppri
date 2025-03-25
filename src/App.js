@@ -90,7 +90,7 @@ function MainApp() {
             height: '100%',
             objectFit: 'fill',
             objectPosition: imagePosition,
-            filter: 'blur(1px)',
+            filter: 'blur(2.5px)',
             zIndex: -1,
             transform: 'translate(-52%, -50%)',
           }}
