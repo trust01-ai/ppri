@@ -1,0 +1,35 @@
+/* Full-page container to center the animation */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  background-color: rgba(255, 255, 255, 0.1); /* Light background */
+}
+
+/* Thin loading bar */
+.loading-line {
+  width: 120px;
+  height: 4px;
+  background-color: #007bff; /* Blue loading bar */
+  position: relative;
+  overflow: hidden;
+  animation: loadingAnimation 1.5s infinite ease-in-out;
+}
+
+/* Loading bar animation */
+@keyframes loadingAnimation {
+  0% {
+    transform: translateX(-100px);
+    width: 80px;
+  }
+  50% {
+    transform: translateX(50px);
+    width: 120px;
+  }
+  100% {
+    transform: translateX(100px);
+    width: 80px;
+  }
+}

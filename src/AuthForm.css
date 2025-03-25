@@ -1,0 +1,194 @@
+/* Responsive container */
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+/* Login box */
+.auth-form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 350px;
+  width: 100%;
+  margin-top: -50px;
+}
+
+/* Input group styling */
+/* Adjust the spacing for the email and password sections */
+.input-section h2,
+.input-section h4 {
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+}
+
+.input-section h3 {
+  font-size: 19px;
+  text-align: center;
+  margin-top: -5px;
+}
+
+/* Input spacing adjustments */
+.email-field,
+.password-input-wrapper {
+  margin-top: 0.5rem;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+/* Input styling */
+input {
+  width: 100%;
+  padding: 0.9rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  margin-bottom: 0.5rem;
+  box-sizing: border-box;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+/* Button wrapper for email and centered button */
+.email-field,
+.login-btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.action-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 150px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Spinner styling */
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #007bff;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Tick mark for success */
+.tick {
+  font-size: 1.4rem;
+  color: green;
+}
+
+/* Login button */
+.login-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 150px;
+}
+
+.login-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Error message styling */
+.errormsg {
+  color: red;
+  font-size: 13px;
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+/* Adjust position of Continue button when error message is present */
+.login-btn-wrapper {
+  margin-top: 1.5rem;
+}
+
+.error-text + .login-btn-wrapper {
+  margin-top: 1.28rem;
+}
+
+/* Reduced border thickness for autofocused inputs */
+input:focus {
+  border: 1px solid #111111;
+  box-shadow: 0 0 3px rgba(0, 123, 255, 0.2);
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+  .login-box {
+    padding: 1.5rem;
+  }
+
+  input {
+    padding: 0.8rem;
+  }
+
+  .login-btn {
+    padding: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .login-box {
+    padding: 1rem;
+  }
+
+  input {
+    padding: 0.7rem;
+  }
+
+  .login-btn {
+    padding: 0.7rem;
+  }
+}
